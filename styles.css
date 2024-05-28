@@ -1,0 +1,20 @@
+:root {
+  background-color: black;
+  color: white;
+}
+
+#home {
+  background-image: url(images/home_bckgrnd_img.jpg);
+}
+
+#reviews {
+  background-image: url(images/review_backgrnd_img.jpg);
+}
+
+#menu {
+  background-image: url(images/menu_bckgrnd_img.jpg);
+}
+
+img {
+  width: 50px;
+}
