@@ -1,20 +1,62 @@
-/* :root {
+#navbar-logo {
+  height: 65px;
+}
+
+.img-div {
   background-color: black;
+}
+
+.wht {
   color: white;
-} */
-
-#home {
-  background-image: url(images/home_bckgrnd_img.jpg);
 }
 
-#reviews {
-  background-image: url(images/review_backgrnd_img.jpg);
+#home-img {
+  opacity: 0.3;
 }
 
-#menu {
-  background-image: url(images/menu_bckgrnd_img.jpg);
+#attention-phrase {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* img {
-  width: 50px;
-} */
+#home-description {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+}
+
+#cta-button {
+  position: absolute;
+  border-radius: 2vw;
+  text-align: center;
+  width: 35%;
+  height: 10%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+#review-img {
+  opacity: 0.5;
+}
+
+#review-title {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#review-cards {
+  position: absolute;
+  left: 3%;
+  top: 190%;
+}

@@ -14,77 +14,132 @@
     <title>Donald's Donuts</title>
   </head>
   <body>
-    <div class="card w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
-    </div>
     <section id="home">
-      <nav>
-        <!-- <a href="#"><img src="images/logo.PNG" /></a> -->
-        <a href="#">Home</a> | <a href="#">Reviews</a> | <a href="#">Menu</a> |
-        <a href="#">Contact</a>
-      </nav>
-      <h1>Fresh, Delicious Donuts Made Daily!</h1>
-      <p>
-        Visit us for a sweet treat and experience the freshly baked,
-        mouth-watering donuts.
-      </p>
-      <button>Discover our Donuts!</button>
+      <div class="navbar bg-base-300">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>Reviews</a></li>
+              <li><a>Menu</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-lg btn-ghost"
+            ><img src="images/logo.PNG" id="navbar-logo"
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl">Home</a></li>
+            <li><a class="text-xl">Reviews</a></li>
+            <li><a class="text-xl">Menu</a></li>
+            <li><a class="text-xl">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end"></div>
+      </div>
+      <div class="img-div">
+        <img src="images/home_bckgrnd_img.jpg" id="home-img" />
+        <h1 class="text-8xl font-bold wht" id="attention-phrase">
+          Fresh, Delicious Donuts Made Daily!
+        </h1>
+        <p class="text-3xl wht" id="home-description">
+          Visit us for a sweet treat and experience the freshly baked,
+          mouth-watering donuts.
+        </p>
+        <button class="btn btn-lg btn-wide btn-primary" id="cta-button">
+          <p class="text-4xl" id="cta-button-text">Discover our Donuts!</p>
+        </button>
+      </div>
     </section>
     <section id="reviews">
-      <h1>Reviews</h1>
-      <div class="review-card small">
-        <div id="reviewer-name">Chuck</div>
-        <div id="review-content">
-          We've been going to Donald's for years and they're hands down the best
-          donuts in the area. The apple fritter is absolutely second to none.
-          The huge Chappel Hill sausage Texas style kolaches are a must have as
-          well. The staff is super friendly and even though we only go once in a
-          while they always remember us and our favorites.
-        </div>
-      </div>
-      <div class="review-card big">
-        <div id="reviewer-name">Carla</div>
-        <div id="review-content">
-          My first time coming to the donut shop by my neighborhood.The service
-          was outstanding, such a sweet lady on a early Sunday morning even gave
-          us donut holes for free with my purchase. Very clean, Fresh and tons
-          of options to choose from and the cake donuts have a real homemade
-          taste. The lemon cake donut was my favorite. Definitely recommend
-          anyone in the area to try.. 🍩
-        </div>
-      </div>
-      <div class="review-card small">
-        <div id="reviewer-name">John</div>
-        <div id="review-content">
-          Best, donut place in the Houston area!!! Highly recommend this for
-          your morning delicacies. They have some of the best donuts and
-          kolaches you'll find around with unbeatable prices. The staff is super
-          friendly and I sadly moved away but I still make the trek to go some
-          mornings!!!
+      <div class="img-div">
+        <img src="images/review_backgrnd_img.jpg" id="review-img" />
+        <h1 class="text-7xl font-bold wht" id="review-title">Reviews</h1>
+        <div class="flex flex-wrap space-x-4 justify-center" id="review-cards">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">Chuck</h2>
+              <div class="rating">
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>
+                We've been going to Donald's for years and they're hands down
+                the best donuts in the area. The apple fritter is absolutely
+                second to none. The huge Chappel Hill sausage Texas style
+                kolaches are a must have as well. The staff is super friendly
+                and even though we only go once in a while they always remember
+                us and our favorites.
+              </p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">Carla</h2>
+              <div class="rating">
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>
+                My first time coming to the donut shop by my neighborhood. The
+                service was outstanding, such a sweet lady on a early Sunday
+                morning even gave us donut holes for free with my purchase. Very
+                clean, Fresh and tons of options to choose from and the cake
+                donuts have a real homemade taste. The lemon cake donut was my
+                favorite. Definitely recommend anyone in the area to try.. 🍩
+              </p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">John</h2>
+              <div class="rating">
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p>
+                Best, donut place in the Houston area!!! Highly recommend this
+                for your morning delicacies. They have some of the best donuts
+                and kolaches you'll find around with unbeatable prices. The
+                staff is super friendly and I sadly moved away but I still make
+                the trek to go some mornings!!!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="menu">
-      <h1>Our Menu</h1>
-      <div class="menu-card"><h3>Donuts</h3></div>
-      <div class="menu-card"><h3>Pastries</h3></div>
-      <div class="menu-card"><h3>Breakfast</h3></div>
-      <div class="menu-card"><h3>Kolaches</h3></div>
-      <div class="menu-card"><h3>Croissant Sandwiches</h3></div>
-      <div class="menu-card"><h3>Beverages</h3></div>
-    </section>
-    <section id="contact"><h1>Contact Us</h1></section>
+    <section id="menu"></section>
+    <section id="contact"></section>
   </body>
 </html>
