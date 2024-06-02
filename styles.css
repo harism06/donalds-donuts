@@ -1,17 +1,15 @@
+/* Navbar logo size */
 #navbar-logo {
   height: 65px;
 }
 
-.img-div {
-  background-color: black;
-}
-
-.wht {
-  color: white;
+/* Home Section Styles */
+#home {
+  position: relative;
 }
 
 #home-img {
-  opacity: 0.3;
+  display: none; /* Hide the image since we're using it as a background */
 }
 
 #attention-phrase {
@@ -26,37 +24,43 @@
 #home-description {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, 200%);
+  transform: translate(-50%, -50%);
 }
 
 #cta-button {
   position: absolute;
-  border-radius: 2vw;
   text-align: center;
-  width: 35%;
-  height: 10%;
-  top: 90%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, -50%);
 }
 
-#review-img {
-  opacity: 0.5;
+/* Reviews Section Styles */
+#reviews {
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 #review-title {
   position: absolute;
   text-align: center;
   width: 80%;
-  top: 165%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
 }
 
-#review-cards {
+#iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+#iframe-container iframe {
   position: absolute;
-  left: 3%;
-  top: 190%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

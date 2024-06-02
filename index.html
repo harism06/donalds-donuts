@@ -14,7 +14,9 @@
     <title>Donald's Donuts</title>
   </head>
   <body>
+    <!-- Home Section -->
     <section id="home">
+      <!-- Navigation Bar -->
       <div class="navbar bg-base-300">
         <div class="navbar-start">
           <div class="dropdown">
@@ -38,108 +40,286 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li><a>Home</a></li>
-              <li><a>Reviews</a></li>
-              <li><a>Menu</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-lg btn-ghost"
+          <a href="#home" class="btn btn-lg btn-ghost"
             ><img src="images/logo.PNG" id="navbar-logo"
           /></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a class="text-xl">Home</a></li>
-            <li><a class="text-xl">Reviews</a></li>
-            <li><a class="text-xl">Menu</a></li>
-            <li><a class="text-xl">Contact</a></li>
+            <li><a href="#home" class="text-xl">Home</a></li>
+            <li><a href="#reviews" class="text-xl">Reviews</a></li>
+            <li><a href="#menu" class="text-xl">Menu</a></li>
+            <li><a href="#contact" class="text-xl">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end"></div>
       </div>
-      <div class="img-div">
-        <img src="images/home_bckgrnd_img.jpg" id="home-img" />
-        <h1 class="text-8xl font-bold wht" id="attention-phrase">
-          Fresh, Delicious Donuts Made Daily!
-        </h1>
-        <p class="text-3xl wht" id="home-description">
-          Visit us for a sweet treat and experience the freshly baked,
-          mouth-watering donuts.
-        </p>
-        <button class="btn btn-lg btn-wide btn-primary" id="cta-button">
-          <p class="text-4xl" id="cta-button-text">Discover our Donuts!</p>
-        </button>
+      <!-- Landing Page -->
+      <div
+        class="relative h-screen flex items-center justify-center bg-cover bg-center"
+        style="
+          background-image: url('images/bckgrnd_imgs/home_bckgrnd_img.jpg');
+        "
+      >
+        <div
+          class="text-center text-white px-6 py-8 sm:px-12 sm:py-16 md:px-24 md:py-24 lg:px-36 lg:py-10 bg-black bg-opacity-70 rounded-lg w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-3xl"
+          id="lnding-pg"
+        >
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Fresh, Delicious Donuts Made Daily!
+          </h1>
+          <p class="text-xl md:text-2xl mb-6">
+            Visit us for a sweet treat and experience the freshly baked,
+            mouth-watering donuts.
+          </p>
+          <a href="#menu" class="text-xl"
+            ><button class="btn btn-lg btn-primary text-2xl md:text-3xl">
+              Take me to the Menu!
+            </button></a
+          >
+        </div>
       </div>
     </section>
-    <section id="reviews">
-      <div class="img-div">
-        <img src="images/review_backgrnd_img.jpg" id="review-img" />
-        <h1 class="text-7xl font-bold wht" id="review-title">Reviews</h1>
-        <div class="flex flex-wrap space-x-4 justify-center" id="review-cards">
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-3xl">Chuck</h2>
-              <div class="rating">
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
-              <p>
-                We've been going to Donald's for years and they're hands down
-                the best donuts in the area. The apple fritter is absolutely
-                second to none. The huge Chappel Hill sausage Texas style
-                kolaches are a must have as well. The staff is super friendly
-                and even though we only go once in a while they always remember
-                us and our favorites.
-              </p>
+
+    <!-- Reviews Section -->
+    <section
+      id="reviews"
+      class="py-8 md:py-16 bg-cover bg-center relative"
+      style="
+        background-image: url('images/bckgrnd_imgs/review_backgrnd_img.jpg');
+      "
+    >
+      <div
+        class="text-center text-white p-4 bg-black bg-opacity-50 rounded-lg mb-8"
+      >
+        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold">Reviews</h1>
+      </div>
+      <div class="flex flex-col items-center space-y-8">
+        <div class="card w-full md:w-1/2 lg:w-1/3 bg-base-100 shadow-xl">
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-lg md:text-xl lg:text-2xl font-bold">
+              Chuck
+            </h2>
+            <div class="rating">
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
+            <p class="text-sm md:text-base lg:text-lg">
+              We've been going to Donald's for years and they're hands down the
+              best donuts in the area. The apple fritter is absolutely second to
+              none. The huge Chappel Hill sausage Texas style kolaches are a
+              must have as well. The staff is super friendly and even though we
+              only go once in a while they always remember us and our favorites.
+            </p>
           </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-3xl">Carla</h2>
-              <div class="rating">
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
-              <p>
-                My first time coming to the donut shop by my neighborhood. The
-                service was outstanding, such a sweet lady on a early Sunday
-                morning even gave us donut holes for free with my purchase. Very
-                clean, Fresh and tons of options to choose from and the cake
-                donuts have a real homemade taste. The lemon cake donut was my
-                favorite. Definitely recommend anyone in the area to try.. 🍩
-              </p>
+        </div>
+        <div class="card w-full md:w-1/2 lg:w-1/3 bg-base-100 shadow-xl">
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-lg md:text-xl lg:text-2xl font-bold">
+              Carla
+            </h2>
+            <div class="rating">
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
+            <p class="text-sm md:text-base lg:text-lg">
+              My first time coming to the donut shop by my neighborhood. The
+              service was outstanding, such a sweet lady on a early Sunday
+              morning even gave us donut holes for free with my purchase. Very
+              clean, Fresh and tons of options to choose from and the cake
+              donuts have a real homemade taste. The lemon cake donut was my
+              favorite. Definitely recommend anyone in the area to try.. 🍩
+            </p>
           </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-3xl">John</h2>
-              <div class="rating">
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
-              <p>
-                Best, donut place in the Houston area!!! Highly recommend this
-                for your morning delicacies. They have some of the best donuts
-                and kolaches you'll find around with unbeatable prices. The
-                staff is super friendly and I sadly moved away but I still make
-                the trek to go some mornings!!!
-              </p>
+        </div>
+        <div class="card w-full md:w-1/2 lg:w-1/3 bg-base-100 shadow-xl">
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-lg md:text-xl lg:text-2xl font-bold">
+              John
+            </h2>
+            <div class="rating">
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
+            <p class="text-sm md:text-base lg:text-lg">
+              Best, donut place in the Houston area!!! Highly recommend this for
+              your morning delicacies. They have some of the best donuts and
+              kolaches you'll find around with unbeatable prices. The staff is
+              super friendly and I sadly moved away but I still make the trek to
+              go some mornings!!!
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section id="menu"></section>
-    <section id="contact"></section>
+
+    <!-- Menu Section -->
+    <section
+      id="menu"
+      class="py-16 bg-cover bg-center relative"
+      style="background-image: url('images/bckgrnd_imgs/menu_bckgrnd_img.jpg')"
+    >
+      <div
+        class="text-center text-white p-4 bg-black bg-opacity-50 rounded-lg mb-8"
+      >
+        <h1 class="text-5xl md:text-7xl font-bold">Our Menu</h1>
+      </div>
+      <div
+        class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
+      >
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/donuts_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl">Donuts</p>
+          </div>
+        </div>
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/pastries_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl">Pastries</p>
+          </div>
+        </div>
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/breakfast_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl">Breakfast</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
+      >
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/beverages_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl">Kolaches</p>
+          </div>
+        </div>
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/croissant_sandwich_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+              Croissant Sandwiches
+            </p>
+          </div>
+        </div>
+        <div
+          class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl image-full"
+        >
+          <figure>
+            <img
+              src="images/menu_page_imgs/beverages_menu.jpg"
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div class="card-body flex justify-center items-center">
+            <p class="card-title text-2xl md:text-3xl lg:text-4xl">Beverages</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-16 bg-cover bg-center relative"
+      style="background-color: gray"
+    >
+      <div
+        class="text-center text-white p-4 bg-black bg-opacity-50 rounded-lg mb-8"
+      >
+        <h1 class="text-5xl md:text-7xl font-bold">Contact Us</h1>
+      </div>
+      <div
+        class="max-w-4xl mx-auto bg-base-300 bg-opacity-75 rounded-lg px-6 py-8"
+      >
+        <div id="iframe-container">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfn7gg-AXpl2VM_Tdz64DRkLnWpjRF95qdQTyR7Q7GtnkLG8g/viewform?embedded=true"
+            frameborder="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="p-10 bg-base-200 text-base-content py-8">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-6"
+      >
+        <!-- Address -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2">Address</h3>
+          <p>435 El Dorado Blvd</p>
+          <p>Webster, Texas, 77598</p>
+        </div>
+        <!-- Shop Availability -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2">Hours of Operation</h3>
+          <p>Tuesday - Sunday</p>
+          <p>5:00am - 12:30pm</p>
+          <p>Closed on Mondays</p>
+        </div>
+        <!-- Method of Contact -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2">Contact</h3>
+          <p>Phone: (281) 480-4402</p>
+          <p>Email: originaldonaldsdonuts@gmail.com</p>
+        </div>
+      </div>
+      <div class="divider divider-neutral"></div>
+      <div class="text-center mt-4">
+        <p>Designed and Created by Haris M.</p>
+      </div>
+    </footer>
   </body>
 </html>
