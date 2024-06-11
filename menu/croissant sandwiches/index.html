@@ -1,0 +1,259 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Donald's Donuts</title>
+  <link rel="icon" href="../../images/logo.PNG" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar bg-base-300">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li><a href="../../index.html" class="scroll-link">Home</a></li>
+          <li><a href="#" class="scroll-link">Reviews</a></li>
+          <li><a href="#" class="scroll-link">Menu</a></li>
+          <li><a href="#" class="scroll-link">Contact</a></li>
+        </ul>
+      </div>
+      <a href="../../index.html" class="btn btn-lg btn-ghost scroll-link"
+        ><img src="../../images/logo.PNG" id="navbar-logo"
+      /></a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <a href="../../index.html#home" class="text-xl scroll-link">Home</a>
+        </li>
+        <li>
+          <a href="../../index.html#reviews" class="text-xl scroll-link"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a href="../../index.html#menu" class="text-xl scroll-link">Menu</a>
+        </li>
+        <li>
+          <a href="../../index.html#contact" class="text-xl scroll-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-end"></div>
+  </div>
+
+  <!-- Donut Page -->
+  <section
+    id="donut-page"
+    class="py-16 bg-cover bg-center relative"
+    style="
+      background-image: url('../../images/menu_page_imgs/croissant_sandwich_menu.jpg');
+    "
+  >
+    <!-- Title -->
+    <div
+      class="text-center text-white p-4 bg-black bg-opacity-55 rounded-lg mb-8"
+    >
+      <h1 class="text-5xl md:text-7xl font-bold">Croissant Sandwiches</h1>
+    </div>
+
+    <!-- Menu Items 1 - 3 -->
+    <div
+      class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
+    >
+      <!-- Menu Item 1 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../../images/croissant_sandwiches/plain_croissant.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Plain Croissant
+          </p>
+          <p class="text-sm text-center mt-2">
+            $1.99 each<br />
+            $22.99 - 6 count<br />
+            $35.99 - 12 count
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../../images/croissant_sandwiches/bacon_egg_ham_cheese.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Bacon, Egg, Ham & Cheese Croissant Sandwich
+          </p>
+          <p class="text-sm text-center mt-2">$3.89 each</p>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../../images/croissant_sandwiches/sausage_egg_cheese.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Sausage, Egg & Cheese Sandwich
+          </p>
+          <p class="text-sm text-center mt-2">
+            $3.89 each<br />
+            $22.99 - 6 count
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Items 4 & 5 -->
+    <div
+      class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
+    >
+      <!-- Menu Item 4 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../../images/croissant_sandwiches/all_meat_egg_chesse.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            All Meat, Egg & Cheese Croissant Sandwich
+          </p>
+          <p class="text-sm text-center mt-2">$4.99 each</p>
+        </div>
+      </div>
+
+      <!-- Menu Item 5 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../../images/croissant_sandwiches/biscuit.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Biscuit
+          </p>
+          <p class="text-sm text-center mt-2">$4.99 each</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-10 bg-base-200 text-base-content py-8">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-6"
+    >
+      <!-- Address -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Address</h3>
+        <p>435 El Dorado Blvd</p>
+        <p>Webster, Texas, 77598</p>
+      </div>
+      <!-- Shop Availability -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Hours of Operation</h3>
+        <p>Tuesday - Sunday</p>
+        <p>5:00am - 12:30pm</p>
+        <p>Closed on Mondays</p>
+      </div>
+      <!-- Method of Contact -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Contact</h3>
+        <p>Phone: (281) 480-4402</p>
+        <p>Email: originaldonaldsdonuts@gmail.com</p>
+      </div>
+      <!-- Follow the Socials -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+        <div class="flex space-x-4 mb-2">
+          <a
+            href="https://www.facebook.com/originaldonaldsdonuts/"
+            target="_blank"
+          >
+            <img
+              src="../../images/facebook.png"
+              class="w-8 h-8 hover:scale-105"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/originaldonaldsdonuts/"
+            target="_blank"
+          >
+            <img
+              src="../../images/instagram.png"
+              class="w-8 h-8 hover:scale-105"
+            />
+          </a>
+        </div>
+        <p class="text-xs text-gray-500">
+          Icons by
+          <a
+            href="https://www.flaticon.com/authors/freepik"
+            target="_blank"
+            class="underline"
+            >Freepik - Flaticon</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="divider divider-neutral"></div>
+    <div class="text-center mt-4">
+      <p>Designed and Created by Haris M.</p>
+    </div>
+  </footer>
+</body>
