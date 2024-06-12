@@ -1,0 +1,1537 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Donald's Donuts</title>
+  <link rel="icon" href="../../images/logo.PNG" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar bg-base-300">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li><a href="../../index.html#home" class="scroll-link">Home</a></li>
+          <li>
+            <a href="../../index.html#reviews" class="scroll-link">Reviews</a>
+          </li>
+          <li><a href="../../index.html#menu" class="scroll-link">Menu</a></li>
+          <li>
+            <a href="../../index.html#contact" class="scroll-link">Contact</a>
+          </li>
+          <li>
+            <a href="../order/index.html" class="scroll-link">Order Now!</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../../index.html" class="btn btn-lg btn-ghost scroll-link"
+        ><img src="../../images/logo.PNG" id="navbar-logo"
+      /></a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <a href="../../index.html#home" class="text-xl scroll-link">Home</a>
+        </li>
+        <li>
+          <a href="../../index.html#reviews" class="text-xl scroll-link"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a href="../../index.html#menu" class="text-xl scroll-link">Menu</a>
+        </li>
+        <li>
+          <a href="../../index.html#contact" class="text-xl scroll-link"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="../order/index.html" class="text-xl scroll-link"
+            >Order Now!</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-end"></div>
+  </div>
+  <!-- Contact Section -->
+  <section
+    id="contact"
+    class="py-16 bg-cover bg-center relative"
+    style="
+      background-image: url(../../images/bckgrnd_imgs/review_backgrnd_img.jpg);
+    "
+  >
+    <div
+      class="text-center text-white p-4 bg-black bg-opacity-50 rounded-lg mb-8"
+    >
+      <h1 class="text-5xl md:text-7xl font-bold">Order Now!</h1>
+    </div>
+    <div
+      class="max-w-4xl mx-auto bg-base-300 bg-opacity-75 rounded-lg px-6 py-8"
+    >
+      <!-- Customer Info -->
+      <div class="mb-6">
+        <label
+          for="customer-name"
+          class="block text-lg font-bold mb-2 text-gray-700"
+          >Enter Your Name:</label
+        >
+        <input
+          type="text"
+          id="customer-name"
+          name="customer-name"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+          placeholder="Your Name"
+        />
+      </div>
+      <div class="mb-6">
+        <label
+          for="customer-phone"
+          class="block text-lg font-bold mb-2 text-gray-700"
+          >Enter Your Phone Number:</label
+        >
+        <input
+          type="tel"
+          id="customer-phone"
+          name="customer-phone"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+          placeholder="Your Phone Number"
+        />
+      </div>
+      <!-- Title -->
+      <h2 class="text-5xl font-bold mb-4 text-center">Donuts</h2>
+      <!-- Netlify Form -->
+      <form name="order-form" id="order-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="order-form" />
+        <!-- Donut Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Filled Donuts
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.29 each
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$6.99 - 6 count
+              </label>
+              <label
+                for="item1-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-3"
+                  name="item1-quantity"
+                  value="3"
+                  class="mr-2"
+                />$11.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Glazed Donuts
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.19 each
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$6.69 - 6 count
+              </label>
+              <label
+                for="item2-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-3"
+                  name="item2-quantity"
+                  value="3"
+                  class="mr-2"
+                />$10.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Sprinkled Donuts
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.29 each
+              </label>
+              <label
+                for="item3-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-2"
+                  name="item3-quantity"
+                  value="2"
+                  class="mr-2"
+                />$6.99 - 6 count
+              </label>
+              <label
+                for="item3-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-3"
+                  name="item3-quantity"
+                  value="3"
+                  class="mr-2"
+                />$11.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Cake
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.29 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$6.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$11.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 5 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Donut Holes
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item5-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item5-quantity-1"
+                  name="item5-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 - 6 count
+              </label>
+              <label
+                for="item5-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item5-quantity-3"
+                  name="item5-quantity"
+                  value="3"
+                  class="mr-2"
+                />$2.29 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 6 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Chocolate Donut Holes
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item6-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item6-quantity-2"
+                  name="item6-quantity"
+                  value="2"
+                  class="mr-2"
+                />$1.89 - 6 count
+              </label>
+              <label
+                for="item6-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item6-quantity-3"
+                  name="item6-quantity"
+                  value="3"
+                  class="mr-2"
+                />$2.29 - 12 count
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-5xl font-bold mb-4 text-center">Pastries</h2>
+        <!-- Pastries Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Éclair Cake
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 each
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$10.99 - 6 count
+              </label>
+              <label
+                for="item1-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-3"
+                  name="item1-quantity"
+                  value="3"
+                  class="mr-2"
+                />$16.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Apple Fritter
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 each
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Cinnamon Roll
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 each
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Cinnamon Twist
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 each
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-5xl font-bold mb-4 text-center">Breakfast</h2>
+        <!-- Breakfast Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Sausage, Egg, & Cheese Tacos
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.69 each
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$15.99 - 6 count
+              </label>
+              <label
+                for="item1-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-3"
+                  name="item1-quantity"
+                  value="3"
+                  class="mr-2"
+                />$25.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Cream Cheese Danish
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$10.99 - 6 count
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$16.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Blueberry Danish
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.89 each
+              </label>
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$10.99 - 6 count
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$16.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Raspberry Danish
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$10.99 - 6 count
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$16.99 - 12 count
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-5xl font-bold mb-4 text-center">Kolaches</h2>
+        <!-- Kolaches Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Cheese Sausage
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.59 each
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$7.99 - 6 count
+              </label>
+              <label
+                for="item1-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-3"
+                  name="item1-quantity"
+                  value="3"
+                  class="mr-2"
+                />$15.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Plain Sausage
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.59 each
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$7.99 - 6 count
+              </label>
+              <label
+                for="item2-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-3"
+                  name="item2-quantity"
+                  value="3"
+                  class="mr-2"
+                />$15.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Jalapeno Kolaches
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.59 each
+              </label>
+              <label
+                for="item3-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-2"
+                  name="item3-quantity"
+                  value="2"
+                  class="mr-2"
+                />$7.99 - 6 count
+              </label>
+              <label
+                for="item3-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-3"
+                  name="item3-quantity"
+                  value="3"
+                  class="mr-2"
+                />$15.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Large Ham Kolaches
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.69 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$15.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$25.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 5 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Large Sausage Kolaches
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.69 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$15.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$25.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 6 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Large Sausage & Jalapeno
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.69 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$15.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$25.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 7 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Boudin/Chapel Hill Mild
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.99 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$16.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$27.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 8 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Boudin/Chapel Hill Jalapeno
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.99 each
+              </label>
+              <label
+                for="item4-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-2"
+                  name="item4-quantity"
+                  value="2"
+                  class="mr-2"
+                />$16.99 - 6 count
+              </label>
+              <label
+                for="item4-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-3"
+                  name="item4-quantity"
+                  value="3"
+                  class="mr-2"
+                />$27.99 - 12 count
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-5xl font-bold mb-4 text-center">
+          Croissant Sandwiches
+        </h2>
+        <!-- Croissant Sandwiches Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Plain Croissant Sandwich
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.99 each
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$22.99 - 6 count
+              </label>
+              <label
+                for="item1-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-3"
+                  name="item1-quantity"
+                  value="3"
+                  class="mr-2"
+                />$35.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Bacon, Egg, Ham & Cheese Croissant Sandwich
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$3.89 each
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Sausage, Egg & Cheese
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$3.89 each
+              </label>
+              <label
+                for="item3-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-2"
+                  name="item3-quantity"
+                  value="2"
+                  class="mr-2"
+                />$22.99 - 6 count
+              </label>
+              <label
+                for="item3-quantity-3"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-3"
+                  name="item3-quantity"
+                  value="3"
+                  class="mr-2"
+                />$11.99 - 12 count
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              All Meat, Egg & Cheese Croissant Sandwich
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item4-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item4-quantity-1"
+                  name="item4-quantity"
+                  value="1"
+                  class="mr-2"
+                />$4.99 each
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 5 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Biscuits
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item5-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item5-quantity-1"
+                  name="item5-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.99 each
+              </label>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-5xl font-bold mb-4 text-center">Beverages</h2>
+        <!-- Beverages Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Menu Item 1 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Juice
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item1-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-1"
+                  name="item1-quantity"
+                  value="1"
+                  class="mr-2"
+                />$2.19 - Small
+              </label>
+              <label
+                for="item1-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item1-quantity-2"
+                  name="item1-quantity"
+                  value="2"
+                  class="mr-2"
+                />$2.79 - Large
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Soda
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item2-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-1"
+                  name="item2-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.49 - Small
+              </label>
+              <label
+                for="item2-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item2-quantity-2"
+                  name="item2-quantity"
+                  value="2"
+                  class="mr-2"
+                />$2.49 - Large
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Milk
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.79 - Small
+              </label>
+              <label
+                for="item3-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-2"
+                  name="item3-quantity"
+                  value="2"
+                  class="mr-2"
+                />$2.79 - Large
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Monster/Starbucks
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$3.29 - Small
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 5 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Bang
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$3.29 - Small
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 6 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Nesquick
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$1.79 - Small
+              </label>
+              <label
+                for="item3-quantity-2"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-2"
+                  name="item3-quantity"
+                  value="2"
+                  class="mr-2"
+                />$2.79 - Large
+              </label>
+            </div>
+          </div>
+          <!-- Menu Item 7 -->
+          <div
+            class="p-6 border-8 border-gray-600 rounded-lg bg-white shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <h3 class="text-2xl font-extrabold mb-4 text-center text-gray-800">
+              Red Bull/Redline
+            </h3>
+            <!-- Quantity Input -->
+            <div class="mt-4">
+              <label
+                for="item3-quantity-1"
+                class="block text-lg font-bold text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  id="item3-quantity-1"
+                  name="item3-quantity"
+                  value="1"
+                  class="mr-2"
+                />$3.29 - Small
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          id="place-order-btn"
+          class="btn-lg block mx-auto mt-8 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600"
+          onclick="confirmed.showModal()"
+        >
+          Place Order
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-10 bg-base-200 text-base-content py-8">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-6"
+    >
+      <!-- Address -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Address</h3>
+        <p>435 El Dorado Blvd</p>
+        <p>Webster, Texas, 77598</p>
+      </div>
+      <!-- Shop Availability -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Hours of Operation</h3>
+        <p>Tuesday - Sunday</p>
+        <p>5:00am - 12:30pm</p>
+        <p>Closed on Mondays</p>
+      </div>
+      <!-- Method of Contact -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Contact</h3>
+        <p>Phone: (281) 480-4402</p>
+        <p>Email: originaldonaldsdonuts@gmail.com</p>
+      </div>
+      <!-- Follow the Socials -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+        <div class="flex space-x-4 mb-2">
+          <a
+            href="https://www.facebook.com/originaldonaldsdonuts/"
+            target="_blank"
+          >
+            <img
+              src="../../images/facebook.png"
+              class="w-8 h-8 hover:scale-105"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/originaldonaldsdonuts/"
+            target="_blank"
+          >
+            <img
+              src="../../images/instagram.png"
+              class="w-8 h-8 hover:scale-105"
+            />
+          </a>
+        </div>
+        <p class="text-xs text-gray-500">
+          Icons by
+          <a
+            href="https://www.flaticon.com/authors/freepik"
+            target="_blank"
+            class="underline"
+            >Freepik - Flaticon</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="divider divider-neutral"></div>
+    <div class="text-center mt-4">
+      <p>Designed and Created by Haris M.</p>
+    </div>
+  </footer>
+</body>
+
+<!-- Modal -->
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="confirmed" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Thanks!</h3>
+    <p class="py-4">Your order has been placed!</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
