@@ -1,0 +1,27 @@
+{
+  "name": "donut_shop_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sendEmail.js",
+  "dependencies": {
+    "@getbrevo/brevo": "^2.1.1",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.0",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harism06/donut_shop_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harism06/donut_shop_website/issues"
+  },
+  "homepage": "https://github.com/harism06/donut_shop_website#readme"
+}

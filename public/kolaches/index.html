@@ -10,7 +10,7 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Donald's Donuts</title>
-  <link rel="icon" href="../../images/logo.PNG" />
+  <link rel="icon" href="../images/logo.PNG" />
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -37,80 +37,146 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a href="../../index.html#home" class="scroll-link">Home</a></li>
+          <li><a href="../#home" class="scroll-link">Home</a></li>
           <li>
-            <a href="../../index.html#reviews" class="scroll-link">Reviews</a>
+            <a href="../#reviews" class="scroll-link">Reviews</a>
           </li>
-          <li><a href="../../index.html#menu" class="scroll-link">Menu</a></li>
+          <li><a href="../#menu" class="scroll-link">Menu</a></li>
           <li>
-            <a href="../../index.html#contact" class="scroll-link">Contact</a>
+            <a href="../#contact" class="scroll-link">Contact</a>
           </li>
           <li>
-            <a href="../order/index.html" class="scroll-link">Order Now!</a>
+            <a href="../order" class="scroll-link">Order Now!</a>
           </li>
         </ul>
       </div>
-      <a href="../../index.html" class="btn btn-lg btn-ghost scroll-link"
-        ><img src="../../images/logo.PNG" id="navbar-logo"
+      <a href="/" class="btn btn-lg btn-ghost scroll-link"
+        ><img src="../images/logo.PNG" id="navbar-logo"
       /></a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a href="../../index.html#home" class="text-xl scroll-link">Home</a>
+          <a href="../#home" class="text-xl scroll-link">Home</a>
         </li>
         <li>
-          <a href="../../index.html#reviews" class="text-xl scroll-link"
-            >Reviews</a
-          >
+          <a href="../#reviews" class="text-xl scroll-link">Reviews</a>
         </li>
         <li>
-          <a href="../../index.html#menu" class="text-xl scroll-link">Menu</a>
+          <a href="../#menu" class="text-xl scroll-link">Menu</a>
         </li>
         <li>
-          <a href="../../index.html#contact" class="text-xl scroll-link"
-            >Contact</a
-          >
+          <a href="../#contact" class="text-xl scroll-link">Contact</a>
         </li>
         <li>
-          <a href="../order/index.html" class="text-xl scroll-link"
-            >Order Now!</a
-          >
+          <a href="../order" class="text-xl scroll-link">Order Now!</a>
         </li>
       </ul>
     </div>
     <div class="navbar-end"></div>
   </div>
-  <!-- Donut Page -->
+
+  <!-- Kolaches Page -->
   <section
     id="donut-page"
     class="py-16 bg-cover bg-center relative"
-    style="
-      background-image: url('../../images/menu_page_imgs/breakfast_menu.jpg');
-    "
+    style="background-image: url('../images/menu_page_imgs/kolache_menu.jpeg')"
   >
     <!-- Title -->
     <div
       class="text-center text-white p-4 bg-black bg-opacity-55 rounded-lg mb-8"
     >
-      <h1 class="text-5xl md:text-7xl font-bold">Breakfast & Danish</h1>
+      <h1 class="text-5xl md:text-7xl font-bold">Kolaches</h1>
     </div>
 
+    <!-- Menu Items 1 - 3 -->
     <div
       class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
     >
+      <!-- Menu Item 1 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/breakfast/breakfast_taco.jpeg"
+            src="../images/kolaches/cheese_sausage.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Sausage, Egg, & Cheese Tacos
+            Cheese Sausage
+          </p>
+          <p class="text-sm text-center mt-2">
+            $1.59 each<br />
+            $7.99 - 6 count<br />
+            $15.99 - 12 count
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../images/kolaches/sausage.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Plain Sausage
+          </p>
+          <p class="text-sm text-center mt-2">
+            $1.59 each<br />
+            $7.99 - 6 count<br />
+            $15.99 - 12 count
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../images/kolaches/jalapeno.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Jalapeno Kolaches
+          </p>
+          <p class="text-sm text-center mt-2">
+            $1.59 each<br />
+            $7.99 - 6 count<br />
+            $15.99 - 12 count
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Items 4 - 6 -->
+    <div
+      class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
+    >
+      <!-- Menu Item 4 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../images/kolaches/large_ham_chapel_mild.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Large Ham Kolaches
           </p>
           <p class="text-sm text-center mt-2">
             $2.69 each<br />
@@ -119,70 +185,102 @@
           </p>
         </div>
       </div>
+
+      <!-- Menu Item 5 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/breakfast/cream_cheese_danish.jpeg"
+            src="../images/kolaches/sausage.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Cream Cheese Danish
+            Large Sausage Kolaches
           </p>
           <p class="text-sm text-center mt-2">
-            $10.99 - 6 count<br />
-            $16.99 - 12 count
+            $2.69 each<br />
+            $15.99 - 6 count<br />
+            $25.99 - 12 count
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Item 6 -->
+      <div
+        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
+      >
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img
+            src="../images/kolaches/sausage_jalapeno.jpeg"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
+            Large Sausage & Jalapeno
+          </p>
+          <p class="text-sm text-center mt-2">
+            $2.69 each<br />
+            $15.99 - 6 count<br />
+            $25.99 - 12 count
           </p>
         </div>
       </div>
     </div>
+
+    <!-- Menu Items 7 & 8 -->
     <div
       class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
     >
+      <!-- Menu Item 7 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/breakfast/blueberry_danish.jpeg"
+            src="../images/kolaches/large_ham_chapel_mild.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Blueberry Danish
+            Boudin/Chapel Hill Mild
           </p>
           <p class="text-sm text-center mt-2">
-            $1.89 each<br />
-            $10.99 - 6 count<br />
-            $26.99 - 12 count
+            $$2.99 each<br />
+            $16.99 - 6 count<br />
+            $27.99 - 12 count
           </p>
         </div>
       </div>
+
+      <!-- Menu Item 8 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/breakfast/raspberry_danish.jpeg"
+            src="../images/kolaches/jalapeno.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Raspberry Danish
+            Boudin/Chapel Hill Jalapeno
           </p>
           <p class="text-sm text-center mt-2">
-            $10.99 - 6 count<br />
-            $16.99 - 12 count
+            $2.99 each<br />
+            $16.99 - 6 count<br />
+            $27.99 - 12 count
           </p>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <footer class="p-10 bg-base-200 text-base-content py-8">
     <div
@@ -215,17 +313,14 @@
             href="https://www.facebook.com/originaldonaldsdonuts/"
             target="_blank"
           >
-            <img
-              src="../../images/facebook.png"
-              class="w-8 h-8 hover:scale-105"
-            />
+            <img src="../images/facebook.png" class="w-8 h-8 hover:scale-105" />
           </a>
           <a
             href="https://www.instagram.com/originaldonaldsdonuts/"
             target="_blank"
           >
             <img
-              src="../../images/instagram.png"
+              src="../images/instagram.png"
               class="w-8 h-8 hover:scale-105"
             />
           </a>

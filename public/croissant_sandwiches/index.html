@@ -10,7 +10,7 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Donald's Donuts</title>
-  <link rel="icon" href="../../images/logo.PNG" />
+  <link rel="icon" href="../images/logo.PNG" />
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -37,188 +37,168 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a href="../../index.html#home" class="scroll-link">Home</a></li>
+          <li><a href="../#home" class="scroll-link">Home</a></li>
           <li>
-            <a href="../../index.html#reviews" class="scroll-link">Reviews</a>
+            <a href="../#reviews" class="scroll-link">Reviews</a>
           </li>
-          <li><a href="../../index.html#menu" class="scroll-link">Menu</a></li>
+          <li><a href="../#menu" class="scroll-link">Menu</a></li>
           <li>
-            <a href="../../index.html#contact" class="scroll-link">Contact</a>
+            <a href="../#contact" class="scroll-link">Contact</a>
           </li>
           <li>
-            <a href="../order/index.html" class="scroll-link">Order Now!</a>
+            <a href="../order" class="scroll-link">Order Now!</a>
           </li>
         </ul>
       </div>
-      <a href="../../index.html" class="btn btn-lg btn-ghost scroll-link"
-        ><img src="../../images/logo.PNG" id="navbar-logo"
+      <a href="/" class="btn btn-lg btn-ghost scroll-link"
+        ><img src="../images/logo.PNG" id="navbar-logo"
       /></a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <a href="../../index.html#home" class="text-xl scroll-link">Home</a>
+          <a href="../#home" class="text-xl scroll-link">Home</a>
         </li>
         <li>
-          <a href="../../index.html#reviews" class="text-xl scroll-link"
-            >Reviews</a
-          >
+          <a href="../#reviews" class="text-xl scroll-link">Reviews</a>
         </li>
         <li>
-          <a href="../../index.html#menu" class="text-xl scroll-link">Menu</a>
+          <a href="../#menu" class="text-xl scroll-link">Menu</a>
         </li>
         <li>
-          <a href="../../index.html#contact" class="text-xl scroll-link"
-            >Contact</a
-          >
+          <a href="../#contact" class="text-xl scroll-link">Contact</a>
         </li>
         <li>
-          <a href="../order/index.html" class="text-xl scroll-link"
-            >Order Now!</a
-          >
+          <a href="../order" class="text-xl scroll-link">Order Now!</a>
         </li>
       </ul>
     </div>
     <div class="navbar-end"></div>
   </div>
+
   <!-- Donut Page -->
   <section
     id="donut-page"
     class="py-16 bg-cover bg-center relative"
-    style="background-image: url('../../images/menu_page_imgs/donuts_menu.jpg')"
+    style="
+      background-image: url('../images/menu_page_imgs/croissant_sandwich_menu.jpg');
+    "
   >
+    <!-- Title -->
     <div
       class="text-center text-white p-4 bg-black bg-opacity-55 rounded-lg mb-8"
     >
-      <h1 class="text-5xl md:text-7xl font-bold">Donuts</h1>
+      <h1 class="text-5xl md:text-7xl font-bold">Croissant Sandwiches</h1>
     </div>
+
+    <!-- Menu Items 1 - 3 -->
     <div
       class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
     >
+      <!-- Menu Item 1 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/donuts/filled_donuts.jpeg"
+            src="../images/croissant_sandwiches/plain_croissant.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Filled Donuts
+            Plain Croissant
           </p>
           <p class="text-sm text-center mt-2">
-            $1.29 each<br />
-            $6.99 - 6 count<br />
-            $11.99 - 12 count
+            $1.99 each<br />
+            $22.99 - 6 count<br />
+            $35.99 - 12 count
           </p>
         </div>
       </div>
+
+      <!-- Menu Item 2 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/donuts/glazed_donut.jpeg"
+            src="../images/croissant_sandwiches/bacon_egg_ham_cheese.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Glazed Donuts
+            Bacon, Egg, Ham & Cheese Croissant Sandwich
           </p>
-          <p class="text-sm text-center mt-2">
-            $1.19 each<br />
-            $6.69 - 6 count<br />
-            $10.99 - 12 count
-          </p>
+          <p class="text-sm text-center mt-2">$3.89 each</p>
         </div>
       </div>
+
+      <!-- Menu Item 3 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/donuts/sprinkled_donut.jpeg"
+            src="../images/croissant_sandwiches/sausage_egg_cheese.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Sprinkled Donuts
+            Sausage, Egg & Cheese Sandwich
           </p>
           <p class="text-sm text-center mt-2">
-            $1.29 each<br />
-            $6.99 - 6 count<br />
-            $11.99 - 12 count
+            $3.89 each<br />
+            $22.99 - 6 count
           </p>
         </div>
       </div>
     </div>
+
+    <!-- Menu Items 4 & 5 -->
     <div
       class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8"
     >
+      <!-- Menu Item 4 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/donuts/cake.jpg"
+            src="../images/croissant_sandwiches/all_meat_egg_chesse.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Cake
+            All Meat, Egg & Cheese Croissant Sandwich
           </p>
-          <p class="text-sm text-center mt-2">
-            $1.29 each<br />
-            $6.99 - 6 count<br />
-            $11.99 - 12 count
-          </p>
+          <p class="text-sm text-center mt-2">$4.99 each</p>
         </div>
       </div>
+
+      <!-- Menu Item 5 -->
       <div
         class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
       >
         <figure class="rounded-t-3xl overflow-hidden">
           <img
-            src="../../images/donuts/donut_holes.jpeg"
+            src="../images/croissant_sandwiches/biscuit.jpeg"
             class="w-full h-full object-cover"
           />
         </figure>
         <div class="card-body flex flex-col justify-center items-center p-4">
           <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Donut Holes
+            Biscuit
           </p>
-          <p class="text-sm text-center mt-2">
-            $1.89 - 6 count<br />
-            $2.29 - 12 count
-          </p>
-        </div>
-      </div>
-      <div
-        class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl"
-      >
-        <figure class="rounded-t-3xl overflow-hidden">
-          <img
-            src="../../images/donuts/chocolate_donut_holes.jpeg"
-            class="w-full h-full object-cover"
-          />
-        </figure>
-        <div class="card-body flex flex-col justify-center items-center p-4">
-          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">
-            Chocolate Donut Holes
-          </p>
-          <p class="text-sm text-center mt-2">
-            $1.89 - 6 count<br />
-            $2.29 - 12 count
-          </p>
+          <p class="text-sm text-center mt-2">$4.99 each</p>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <footer class="p-10 bg-base-200 text-base-content py-8">
     <div
@@ -251,17 +231,14 @@
             href="https://www.facebook.com/originaldonaldsdonuts/"
             target="_blank"
           >
-            <img
-              src="../../images/facebook.png"
-              class="w-8 h-8 hover:scale-105"
-            />
+            <img src="../images/facebook.png" class="w-8 h-8 hover:scale-105" />
           </a>
           <a
             href="https://www.instagram.com/originaldonaldsdonuts/"
             target="_blank"
           >
             <img
-              src="../../images/instagram.png"
+              src="../images/instagram.png"
               class="w-8 h-8 hover:scale-105"
             />
           </a>
