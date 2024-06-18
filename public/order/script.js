@@ -245,7 +245,7 @@ function confirmOrder() {
 
   console.log(orderDetails);
 
-  fetch("http://localhost:3000/order/userData", {
+  fetch("https://donut-shop-website.onrender.com/order/userData", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
