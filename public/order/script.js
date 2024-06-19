@@ -8,6 +8,7 @@ window.onload = function () {
 function confirmOrder() {
   const customerName = document.getElementById("customer-name").value;
   const customerPhone = document.getElementById("customer-phone").value;
+  const customerPickup = document.getElementById("customer-pickup").value;
 
   const orderItems = [];
 
@@ -240,6 +241,7 @@ function confirmOrder() {
   const orderDetails = {
     customerName: customerName,
     customerPhone: customerPhone,
+    customerPickup: customerPickup,
     items: orderItems,
   };
 

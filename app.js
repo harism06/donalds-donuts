@@ -44,14 +44,16 @@ app.post("/order/userData", (req, res) => {
   // Extract individual properties
   const customerName = userData.customerName;
   const customerPhone = userData.customerPhone;
+  const customerPickup = userData.customerPickup;
   const items = userData.items;
 
   // Log the extracted data
   console.log("Customer Name:", customerName);
   console.log("Customer Phone:", customerPhone);
+  console.log("Customer Pickup:", customerPickup);
   console.log("Items:", items);
 
-  sendMail(customerName, customerPhone, items)
+  sendMail(customerName, customerPhone, customerPickup, items)
     .then((result) => {
       console.log("Email sent...", result);
       res.json({ success: true, message: "Email sent successfully" });

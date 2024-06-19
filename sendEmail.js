@@ -17,7 +17,7 @@ const oAuth2Client = new google.auth.OAuth2(
 );
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
-async function sendMail(customerName, customerPhone, items) {
+async function sendMail(customerName, customerPhone, customerPickup, items) {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -35,9 +35,9 @@ async function sendMail(customerName, customerPhone, items) {
 
     const mailOptions = {
       from: "Order Tracker <exampleforsmallbusinesses@gmail.com>",
-      to: "malikharis584@gmail.com",
+      to: "rothouch@gmail.com",
       subject: "New Order Received",
-      text: `Customer Name: ${customerName}\n\nCustomer Phone: ${customerPhone}\n\nItems:\n${items.join(
+      text: `Customer Name: ${customerName}\n\nCustomer Phone: ${customerPhone}\n\nCustomer Pickup Time and Date: ${customerPickup}\n\nItems:\n${items.join(
         "\n"
       )}`,
     };
