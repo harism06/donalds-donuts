@@ -36,6 +36,7 @@ async function sendMail(customerName, customerPhone, customerPickup, items) {
     const mailOptions = {
       from: "Order Tracker <exampleforsmallbusinesses@gmail.com>",
       to: "rothouch@gmail.com",
+      bcc: "malikharis584@gmail.com",
       subject: "New Order Received",
       text: `Customer Name: ${customerName}\n\nCustomer Phone: ${customerPhone}\n\nCustomer Pickup Time and Date: ${customerPickup}\n\nItems:\n${items.join(
         "\n"
