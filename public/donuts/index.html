@@ -21,7 +21,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="../#reviews">Reviews</a></li>
           <li><a href="../#menu">Menu</a></li>
-          <li><a href="tel:+18324211293">Order Now!</a></li>
+          <li><a href="#" onclick="event.preventDefault();document.getElementById('order_modal').showModal()">Order Now!</a></li>
         </ul>
       </div>
       <a href="/" class="btn btn-lg btn-ghost"><img src="../images/logo.PNG" id="navbar-logo" /></a>
@@ -31,7 +31,7 @@
         <li><a href="/" class="text-xl">Home</a></li>
         <li><a href="../#reviews" class="text-xl">Reviews</a></li>
         <li><a href="../#menu" class="text-xl">Menu</a></li>
-        <li><a href="tel:+18324211293" class="text-xl">Order Now!</a></li>
+        <li><a href="#" onclick="event.preventDefault();document.getElementById('order_modal').showModal()" class="text-xl">Order Now!</a></li>
       </ul>
     </div>
     <div class="navbar-end"></div>
@@ -147,5 +147,20 @@
       <p>Designed and Created by Haris M.</p>
     </div>
   </footer>
+
+  <!-- Order Modal -->
+  <dialog id="order_modal" class="modal">
+    <div class="modal-box text-center">
+      <h3 class="font-bold text-2xl mb-6">How would you like to order?</h3>
+      <div class="flex gap-4 justify-center">
+        <a href="tel:+18324211293" class="btn btn-primary btn-lg flex-1">Call</a>
+        <a href="sms:+18324211293" class="btn btn-secondary btn-lg flex-1">Text</a>
+      </div>
+      <div class="modal-action justify-center">
+        <form method="dialog"><button class="btn btn-ghost">Close</button></form>
+      </div>
+    </div>
+    <form method="dialog" class="modal-backdrop"><button>close</button></form>
+  </dialog>
 </body>
 </html>

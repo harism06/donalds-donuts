@@ -71,13 +71,12 @@
             Visit us for a sweet treat and experience the freshly baked,
             mouth-watering donuts.
           </p>
-          <a href="tel:+18324211293" class="text-xl scroll-link"
-            ><button
-              class="btn btn-lg btn-primary text-2xl md:text-3xl hover:scale-105"
-            >
-              Order Now!
-            </button></a
+          <button
+            onclick="document.getElementById('order_modal').showModal()"
+            class="btn btn-lg btn-primary text-2xl md:text-3xl hover:scale-105"
           >
+            Order Now!
+          </button>
         </div>
       </div>
     </section>
@@ -344,5 +343,19 @@
         <p>Designed and Created by Haris M.</p>
       </div>
     </footer>
+  <!-- Order Modal -->
+  <dialog id="order_modal" class="modal">
+    <div class="modal-box text-center">
+      <h3 class="font-bold text-2xl mb-6">How would you like to order?</h3>
+      <div class="flex gap-4 justify-center">
+        <a href="tel:+18324211293" class="btn btn-primary btn-lg flex-1">Call</a>
+        <a href="sms:+18324211293" class="btn btn-secondary btn-lg flex-1">Text</a>
+      </div>
+      <div class="modal-action justify-center">
+        <form method="dialog"><button class="btn btn-ghost">Close</button></form>
+      </div>
+    </div>
+    <form method="dialog" class="modal-backdrop"><button>close</button></form>
+  </dialog>
   </body>
 </html>
