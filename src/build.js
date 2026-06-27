@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/app.css" />
-  <title>Donald's Donuts</title>
-  <link rel="icon" href="../images/logo.PNG" />
-</head>
-<body>
+// Generates the category menu pages (public/<slug>/index.html) from src/menu.js.
+// Pure Node, no dependencies. Run with: node src/build.js
+const fs = require("fs");
+const path = require("path");
+const categories = require("./menu");
+
+const PHONE = "tel:+12814804402";
+
+const navbar = () => `
   <!-- Navigation Bar -->
   <div class="navbar bg-base-300">
     <div class="navbar-start">
@@ -21,7 +20,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="../#reviews">Reviews</a></li>
           <li><a href="../#menu">Menu</a></li>
-          <li><a href="tel:+12814804402">Order Now!</a></li>
+          <li><a href="${PHONE}">Order Now!</a></li>
         </ul>
       </div>
       <a href="/" class="btn btn-lg btn-ghost"><img src="../images/logo.PNG" id="navbar-logo" /></a>
@@ -31,64 +30,13 @@
         <li><a href="/" class="text-xl">Home</a></li>
         <li><a href="../#reviews" class="text-xl">Reviews</a></li>
         <li><a href="../#menu" class="text-xl">Menu</a></li>
-        <li><a href="tel:+12814804402" class="text-xl">Order Now!</a></li>
+        <li><a href="${PHONE}" class="text-xl">Order Now!</a></li>
       </ul>
     </div>
     <div class="navbar-end"></div>
-  </div>
+  </div>`;
 
-  <!-- Breakfast & Danish Page -->
-  <section id="menu-page" class="py-16 bg-cover bg-center relative"
-    style="background-image: url('../images/menu_page_imgs/breakfast_menu.jpeg')">
-    <div class="text-center text-white p-4 bg-black bg-opacity-55 rounded-lg mb-8">
-      <h1 class="text-5xl md:text-7xl font-bold">Breakfast & Danish</h1>
-    </div>
-    <div class="flex flex-wrap justify-center gap-4 mt-8">
-      <div class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl">
-        <figure class="rounded-t-3xl overflow-hidden">
-          <img src="../images/breakfast/breakfast_taco.jpeg" class="w-full h-full object-cover" />
-        </figure>
-        <div class="card-body flex flex-col justify-center items-center p-4">
-          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">Sausage, Egg, &amp; Cheese Tacos</p>
-          <p class="text-sm text-center mt-2">$2.69 each<br />
-            $15.99 - 6 count<br />
-            $25.99 - 12 count</p>
-        </div>
-      </div>
-      <div class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl">
-        <figure class="rounded-t-3xl overflow-hidden">
-          <img src="../images/breakfast/cream_cheese_danish.jpeg" class="w-full h-full object-cover" />
-        </figure>
-        <div class="card-body flex flex-col justify-center items-center p-4">
-          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">Cream Cheese Danish</p>
-          <p class="text-sm text-center mt-2">$10.99 - 6 count<br />
-            $16.99 - 12 count</p>
-        </div>
-      </div>
-      <div class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl">
-        <figure class="rounded-t-3xl overflow-hidden">
-          <img src="../images/breakfast/blueberry_danish.jpeg" class="w-full h-full object-cover" />
-        </figure>
-        <div class="card-body flex flex-col justify-center items-center p-4">
-          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">Blueberry Danish</p>
-          <p class="text-sm text-center mt-2">$1.89 each<br />
-            $10.99 - 6 count<br />
-            $26.99 - 12 count</p>
-        </div>
-      </div>
-      <div class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl">
-        <figure class="rounded-t-3xl overflow-hidden">
-          <img src="../images/breakfast/raspberry_danish.jpeg" class="w-full h-full object-cover" />
-        </figure>
-        <div class="card-body flex flex-col justify-center items-center p-4">
-          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">Raspberry Danish</p>
-          <p class="text-sm text-center mt-2">$10.99 - 6 count<br />
-            $16.99 - 12 count</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+const footer = () => `
   <!-- Footer -->
   <footer class="p-10 bg-base-200 text-base-content py-8">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-6">
@@ -124,6 +72,49 @@
     <div class="text-center mt-4">
       <p>Designed and Created by Haris M.</p>
     </div>
-  </footer>
+  </footer>`;
+
+const card = (slug, item) => `
+      <div class="card w-full md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl transition-transform transform hover:scale-105 border-solid border-4 border-black rounded-3xl">
+        <figure class="rounded-t-3xl overflow-hidden">
+          <img src="../images/${slug}/${item.image}" class="w-full h-full object-cover" />
+        </figure>
+        <div class="card-body flex flex-col justify-center items-center p-4">
+          <p class="card-title text-2xl md:text-3xl lg:text-4xl text-center">${item.name}</p>
+          <p class="text-sm text-center mt-2">${item.prices.join("<br />\n            ")}</p>
+        </div>
+      </div>`;
+
+const page = (c) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/app.css" />
+  <title>Donald's Donuts</title>
+  <link rel="icon" href="../images/logo.PNG" />
+</head>
+<body>${navbar()}
+
+  <!-- ${c.title} Page -->
+  <section id="menu-page" class="py-16 bg-cover bg-center relative"
+    style="background-image: url('../images/menu_page_imgs/${c.bg}')">
+    <div class="text-center text-white p-4 bg-black bg-opacity-55 rounded-lg mb-8">
+      <h1 class="text-5xl md:text-7xl font-bold">${c.title}</h1>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mt-8">${c.items.map((i) => card(c.slug, i)).join("")}
+    </div>
+  </section>
+${footer()}
 </body>
 </html>
+`;
+
+let count = 0;
+for (const c of categories) {
+  const out = path.join(__dirname, "..", "public", c.slug, "index.html");
+  fs.writeFileSync(out, page(c));
+  console.log(`  ✓ ${c.slug.padEnd(22)} ${c.items.length} items`);
+  count += c.items.length;
+}
+console.log(`Generated ${categories.length} category pages, ${count} items total.`);

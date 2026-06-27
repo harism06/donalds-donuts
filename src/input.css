@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Site-specific styles (carried over from the old per-page CSS) */
+body,
+html {
+  overflow-x: hidden;
+}
+
+#navbar-logo {
+  height: 65px;
+}
+
+#home {
+  position: relative;
+}
+
+#reviews {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
