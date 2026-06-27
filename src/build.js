@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const categories = require("./menu");
 
-const PHONE = "tel:+12814804402";
+const PHONE = "tel:+18324211293";
 
 const navbar = () => `
   <!-- Navigation Bar -->
@@ -117,4 +117,6 @@ for (const c of categories) {
   console.log(`  ✓ ${c.slug.padEnd(22)} ${c.items.length} items`);
   count += c.items.length;
 }
-console.log(`Generated ${categories.length} category pages, ${count} items total.`);
+console.log(
+  `Generated ${categories.length} category pages, ${count} items total.`,
+);
