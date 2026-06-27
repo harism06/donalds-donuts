@@ -53,7 +53,7 @@ const footer = () => `
       </div>
       <div class="mb-6 md:mb-0">
         <h3 class="text-lg font-semibold mb-2">Contact</h3>
-        <p>Phone: (281) 480-4402</p>
+        <p>Phone: (832) 421-1293</p>
         <p>Email: rothouch@gmail.com</p>
       </div>
       <div class="mb-6 md:mb-0">
