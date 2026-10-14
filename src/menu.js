@@ -12,32 +12,32 @@ module.exports = [
       {
         image: "filled_donuts.jpeg",
         name: "Filled Donuts",
-        prices: ["$1.49 each", "$7.49 - 6 count", "$12.99 - 12 count"],
+        prices: ["$1.49 each", "$7.99 - 6 count", "$13.99 - 12 count"],
       },
       {
         image: "glazed_donut.jpeg",
         name: "Glazed Donuts",
-        prices: ["$1.49 each", "$7.39 - 6 count", "$11.99 - 12 count"],
+        prices: ["$1.49 each", "$7.89 - 6 count", "$12.99 - 12 count"],
       },
       {
         image: "sprinkled_donut.jpeg",
         name: "Sprinkled Donuts",
-        prices: ["$1.49 each", "$7.49 - 6 count", "$12.99 - 12 count"],
+        prices: ["$1.49 each", "$7.99 - 6 count", "$13.99 - 12 count"],
       },
       {
         image: "cake.jpeg",
         name: "Cake",
-        prices: ["$1.49 each", "$7.49 - 6 count", "$12.99 - 12 count"],
+        prices: ["$1.49 each", "$7.99 - 6 count", "$13.99 - 12 count"],
       },
       {
         image: "donut_holes.jpeg",
         name: "Donut Holes",
-        prices: ["$2.09 - 6 count", "$2.59 - 12 count"],
+        prices: ["$2.59 - 6 count", "$3.59 - 12 count"],
       },
       {
         image: "chocolate_donut_holes.jpeg",
         name: "Chocolate Donut Holes",
-        prices: ["$2.09 - 6 count", "$2.59 - 12 count"],
+        prices: ["$2.59 - 6 count", "$3.59 - 12 count"],
       },
     ],
   },
@@ -49,7 +49,7 @@ module.exports = [
       {
         image: "eclair.jpeg",
         name: "Éclair Cake",
-        prices: ["$2.15 each", "$12.49 - 6 count", "$17.99 - 12 count"],
+        prices: ["$2.15 each", "$12.99 - 6 count", "$18.99 - 12 count"],
       },
       {
         image: "apple_fritter.jpeg",
@@ -76,22 +76,22 @@ module.exports = [
       {
         image: "breakfast_taco.jpeg",
         name: "Sausage, Egg, &amp; Cheese Tacos",
-        prices: ["$2.99 each", "$17.99 - 6 count", "$27.99 - 12 count"],
+        prices: ["$2.99 each", "$18.49 - 6 count", "$28.99 - 12 count"],
       },
       {
         image: "cream_cheese_danish.jpeg",
         name: "Cream Cheese Danish",
-        prices: ["$2.15 each", "$11.99 - 6 count", "$17.99 - 12 count"],
+        prices: ["$2.15 each", "$12.49 - 6 count", "$18.99 - 12 count"],
       },
       {
         image: "blueberry_danish.jpeg",
         name: "Blueberry Danish",
-        prices: ["$2.15 each", "$11.99 - 6 count", "$17.99 - 12 count"],
+        prices: ["$2.15 each", "$12.49 - 6 count", "$18.99 - 12 count"],
       },
       {
         image: "raspberry_danish.jpeg",
         name: "Raspberry Danish",
-        prices: ["$2.15 each", "$11.99 - 6 count", "$17.99 - 12 count"],
+        prices: ["$2.15 each", "$12.49 - 6 count", "$18.99 - 12 count"],
       },
     ],
   },
@@ -103,42 +103,42 @@ module.exports = [
       {
         image: "cheese_sausage.jpeg",
         name: "Cheese Sausage",
-        prices: ["$1.69 each", "$8.99 - 6 count", "$17.29 - 12 count"],
+        prices: ["$1.69 each", "$9.49 - 6 count", "$18.29 - 12 count"],
       },
       {
         image: "sausage.jpeg",
         name: "Plain Sausage",
-        prices: ["$1.69 each", "$8.99 - 6 count", "$17.29 - 12 count"],
+        prices: ["$1.69 each", "$9.49 - 6 count", "$18.29 - 12 count"],
       },
       {
         image: "jalapeno.jpeg",
         name: "Jalapeno Kolaches",
-        prices: ["$1.69 each", "$8.99 - 6 count", "$17.29 - 12 count"],
+        prices: ["$1.69 each", "$9.49 - 6 count", "$18.29 - 12 count"],
       },
       {
         image: "large_ham_chapel_mild.jpeg",
         name: "Large Ham Kolaches",
-        prices: ["$2.99 each", "$17.49 - 6 count", "$27.99 - 12 count"],
+        prices: ["$2.99 each", "$17.99 - 6 count", "$28.99 - 12 count"],
       },
       {
         image: "sausage.jpeg",
         name: "Large Sausage Kolaches",
-        prices: ["$2.99 each", "$17.49 - 6 count", "$27.99 - 12 count"],
+        prices: ["$2.99 each", "$17.99 - 6 count", "$28.99 - 12 count"],
       },
       {
         image: "sausage_jalapeno.jpeg",
         name: "Large Sausage &amp; Jalapeno",
-        prices: ["$2.99 each", "$17.49 - 6 count", "$27.99 - 12 count"],
+        prices: ["$2.99 each", "$17.99 - 6 count", "$28.99 - 12 count"],
       },
       {
         image: "large_ham_chapel_mild.jpeg",
         name: "Boudin/Chapel Hill Mild",
-        prices: ["$3.29 each", "$18.99 - 6 count", "$28.99 - 12 count"],
+        prices: ["$3.29 each", "$19.49 - 6 count", "$29.99 - 12 count"],
       },
       {
         image: "jalapeno.jpeg",
         name: "Boudin/Chapel Hill Jalapeno",
-        prices: ["$3.29 each", "$18.99 - 6 count", "$28.99 - 12 count"],
+        prices: ["$3.29 each", "$19.49 - 6 count", "$29.99 - 12 count"],
       },
     ],
   },
@@ -150,12 +150,12 @@ module.exports = [
       {
         image: "plain_croissant.jpeg",
         name: "Plain Croissant",
-        prices: ["$2.39 each", "$25.99 - 6 count", "$42.99 - 12 count"],
+        prices: ["$2.39 each", "$26.49 - 6 count", "$43.99 - 12 count"],
       },
       {
         image: "bacon_egg_ham_cheese.jpeg",
         name: "Bacon, Egg, Ham &amp; Cheese Croissant Sandwich",
-        prices: ["$4.19 each", "$25.99 - 6 count"],
+        prices: ["$4.19 each", "$26.49 - 6 count"],
       },
       {
         image: "sausage_egg_cheese.jpeg",
